@@ -22,11 +22,6 @@ namespace ColorRevitAddIn
             }
         }
 
-        public override string ToString()
-        {
-            return string.Join(Environment.NewLine, _blocks.Select(_ => $"{_.Key}"));
-        }
-
         public void Process()
         {
             foreach (var block in _blocks.Values)
