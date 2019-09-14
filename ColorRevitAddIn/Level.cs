@@ -7,7 +7,7 @@ namespace ColorRevitAddIn
     {
         private readonly Dictionary<string, Flat> _flats = new Dictionary<string, Flat>();
 
-        public void Add(Part part)
+        public void Add(IPart part)
         {
             if (!_flats.TryGetValue(part.Zone, out var flat))
             {

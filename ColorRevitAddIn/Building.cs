@@ -8,7 +8,7 @@ namespace ColorRevitAddIn
     {
         private readonly Dictionary<string, Block> _blocks = new Dictionary<string, Block>();
 
-        public void Add(IEnumerable<Part> parts)
+        public void Add(IEnumerable<IPart> parts)
         {
             foreach (var part in parts)
             {

@@ -6,7 +6,7 @@ namespace ColorRevitAddIn
     {
         private readonly Dictionary<string, Level> _levels = new Dictionary<string, Level>();
 
-        public void Add(Part part)
+        public void Add(IPart part)
         {
             if (!_levels.TryGetValue(part.Level, out var level))
             {

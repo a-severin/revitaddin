@@ -3,7 +3,7 @@ using Autodesk.Revit.DB;
 
 namespace ColorRevitAddIn
 {
-    public sealed class Part
+    public sealed class Part : IPart
     {
         private readonly Element _element;
 

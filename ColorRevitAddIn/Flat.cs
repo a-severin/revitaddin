@@ -5,11 +5,11 @@ namespace ColorRevitAddIn
 {
     public sealed class Flat
     {
-        private readonly List<Part> _parts = new List<Part>();
+        private readonly List<IPart> _parts = new List<IPart>();
 
         public bool IsSemitone { get; private set; }
 
-        public void Add(Part part)
+        public void Add(IPart part)
         {
             _parts.Add(part);
         }
